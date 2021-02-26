@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>非得失</title>
+  <icon>https://bojiehuang1994.github.io/icon.png</icon>
+  <subtitle>不要去做没有把握的事情</subtitle>
+  <link href="https://bojiehuang1994.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://bojiehuang1994.github.io/"/>
+  <updated>2021-02-26T02:32:02.305Z</updated>
+  <id>https://bojiehuang1994.github.io/</id>
+  
+  <author>
+    <name>Bojie</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>继续努力</title>
+    <link href="https://bojiehuang1994.github.io/2021/02/25/hello-world/"/>
+    <id>https://bojiehuang1994.github.io/2021/02/25/hello-world/</id>
+    <published>2021-02-25T13:25:13.176Z</published>
+    <updated>2021-02-26T02:32:02.305Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;不要灰心，功到自然成&lt;/p&gt;
+&lt;h2 id=&quot;如何过英语6级&quot;&gt;&lt;a href=&quot;#如何过英语6级&quot; class=&quot;headerlink&quot; title=&quot;如何过英语6级&quot;&gt;&lt;/a&gt;如何过英语6级&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
