@@ -3,8 +3,8 @@
   <entry>
     <title>继续努力</title>
     <url>/2021/02/25/hello-world/</url>
-    <content><![CDATA[<p>不要灰心，功到自然成</p>
-<h2 id="如何过英语6级"><a href="#如何过英语6级" class="headerlink" title="如何过英语6级"></a>如何过英语6级</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<p>寒假至今，已学习了python数据分析与可视化，mysql数据库，机器学习入门</p>
+<h2 id="好玩的计算机"><a href="#好玩的计算机" class="headerlink" title="好玩的计算机"></a>好玩的计算机</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
