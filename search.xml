@@ -126,6 +126,37 @@
     
     
     <entry>
+      <title>Mysql</title>
+      <link href="2021/05/03/mysql/"/>
+      <url>2021/05/03/mysql/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="mysql-command-line-client语法"><a href="#mysql-command-line-client语法" class="headerlink" title="mysql command line client语法"></a>mysql command line client语法</h2><h3 id="启动与退出"><a href="#启动与退出" class="headerlink" title="启动与退出"></a>启动与退出</h3><p>1.cmd，键入命令：mysql -u root -p ; root的密码，然后就可以进入mysql了。</p><p>2.进入MySQL：启动MySQL Command Line Client（MySQL的DOS界面），直接输入安装时的密码即可。此时的提示符是：mysql&gt;</p><p>3.退出MySQL：quit或exit</p><h3 id="库操作"><a href="#库操作" class="headerlink" title="库操作"></a>库操作</h3><p>1、、创建数据库<br>命令：create database 数据库名<br>例如：建立一个名为hbj的数据库<br>mysql&gt; create database hbj;</p><p>2、显示所有的数据库<br>命令：show databases （注意：最后有个s）<br>mysql&gt; show databases;</p><p>3、删除数据库<br>命令：drop database 数据库名<br>例如：删除名为hbj的数据库<br>mysql&gt; drop database hbj;</p><p>4、连接数据库<br>命令： use 数据库名<br>例如：如果hbj数据库存在，尝试存取它：<br>mysql&gt; use hbj;<br>屏幕提示：Database changed</p><p>5、查看当前使用的数据库<br>mysql&gt; select database();</p><p>6、当前数据库包含的表信息：<br>mysql&gt; show tables; （注意：最后有个s）</p><h3 id="三、表操作，操作之前应连接某个数据库"><a href="#三、表操作，操作之前应连接某个数据库" class="headerlink" title="三、表操作，操作之前应连接某个数据库"></a>三、表操作，操作之前应连接某个数据库</h3><p>1、建表<br>命令：create table &lt;表名&gt; ( &lt;字段名1&gt; &lt;类型1&gt; [,..&lt;字段名n&gt; &lt;类型n&gt;]);<br>mysql&gt; create table MyClass(</p><blockquote><p>id int(4) not null primary key auto_increment,<br>name char(20) not null,<br>sex int(4) not null default ‘0’,<br>degree double(16,2));</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据分析 </category>
+          
+          <category> mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数据分析 </tag>
+            
+            <tag> mysql </tag>
+            
+            <tag> 计算机 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>《有限与无限的游戏》-詹姆斯·卡斯（James P. Carse）</title>
       <link href="2021/03/12/%E3%80%8A%E6%9C%89%E9%99%90%E4%B8%8E%E6%97%A0%E9%99%90%E7%9A%84%E6%B8%B8%E6%88%8F%E3%80%8B/"/>
       <url>2021/03/12/%E3%80%8A%E6%9C%89%E9%99%90%E4%B8%8E%E6%97%A0%E9%99%90%E7%9A%84%E6%B8%B8%E6%88%8F%E3%80%8B/</url>
