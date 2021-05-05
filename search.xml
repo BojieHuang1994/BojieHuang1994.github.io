@@ -700,10 +700,12 @@
   </entry>
   <entry>
     <title>Mysql</title>
-    <url>/2021/05/03/mysql/</url>
+    <url>/2021/05/05/mysql/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="mysql-command-line-client语法"><a href="#mysql-command-line-client语法" class="headerlink" title="mysql command line client语法"></a>mysql command line client语法</h2><h3 id="启动与退出"><a href="#启动与退出" class="headerlink" title="启动与退出"></a>启动与退出</h3><p>1.cmd，键入命令：mysql -u root -p ; root的密码，然后就可以进入mysql了。</p>
 <p>2.进入MySQL：启动MySQL Command Line Client（MySQL的DOS界面），直接输入安装时的密码即可。此时的提示符是：mysql&gt;</p>
 <p>3.退出MySQL：quit或exit</p>
+<span id="more"></span>
+
 <h3 id="库操作"><a href="#库操作" class="headerlink" title="库操作"></a>库操作</h3><p>1、、创建数据库<br>命令：create database 数据库名<br>例如：建立一个名为hbj的数据库<br>mysql&gt; create database hbj;</p>
 <p>2、显示所有的数据库<br>命令：show databases （注意：最后有个s）<br>mysql&gt; show databases;</p>
 <p>3、删除数据库<br>命令：drop database 数据库名<br>例如：删除名为hbj的数据库<br>mysql&gt; drop database hbj;</p>
