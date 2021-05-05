@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/%E7%A4%BC%E7%89%A9.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/gift_favicon-32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/gift_favicon-16.ico">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"bojiehuang1994.github.io","root":"/","images":"/images","scheme":"Pisces","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="总览区块链：分布在全球各地、能够协同运转的数据库存储系统，区别于传统数据库运作——读写权限掌握在一个公司或者一个集权手上（中心化的特征） 在比特币等语言体系之下，区块链本质上是一个去中心化的分布式账本数据库（感谢在与比特币相关的区块链应用中可使用这一术语，但区块链技术可能并不包含“账本”）。其本身是一串使用密码学相关联所产生的数据块，每一个数据块中包含了多次比特币网络交易有效确认的信息。 中心化">
+<meta property="og:type" content="article">
+<meta property="og:title" content="区块链技术（lockChain for Babies）">
+<meta property="og:url" content="https://bojiehuang1994.github.io/2021/05/05/%E5%8C%BA%E5%9D%97%E9%93%BE/index.html">
+<meta property="og:site_name" content="非得失">
+<meta property="og:description" content="总览区块链：分布在全球各地、能够协同运转的数据库存储系统，区别于传统数据库运作——读写权限掌握在一个公司或者一个集权手上（中心化的特征） 在比特币等语言体系之下，区块链本质上是一个去中心化的分布式账本数据库（感谢在与比特币相关的区块链应用中可使用这一术语，但区块链技术可能并不包含“账本”）。其本身是一串使用密码学相关联所产生的数据块，每一个数据块中包含了多次比特币网络交易有效确认的信息。 中心化">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bojiehuang1994.github.io/images/v2-9b6d8ac951f48d7cd31b7d4f3e266c69_r.jpg">
+<meta property="og:image" content="https://bojiehuang1994.github.io/images/v2-90202117662d6ffef784185525b7573e_r.jpg">
+<meta property="og:image" content="https://bojiehuang1994.github.io/images/v2-7b564661d4e1d6693ed89b71e0c68192_r.jpg">
+<meta property="article:published_time" content="2021-05-05T12:01:18.512Z">
+<meta property="article:modified_time" content="2021-05-05T12:01:18.512Z">
+<meta property="article:author" content="Bojie">
+<meta property="article:tag" content="咨询">
+<meta property="article:tag" content="区块链">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bojiehuang1994.github.io/images/v2-9b6d8ac951f48d7cd31b7d4f3e266c69_r.jpg">
+
+
+<link rel="canonical" href="https://bojiehuang1994.github.io/2021/05/05/%E5%8C%BA%E5%9D%97%E9%93%BE/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>区块链技术（lockChain for Babies） | 非得失</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="非得失" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">非得失</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">严肃活泼，身心并修</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">14</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">11</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">8</span></a></li>
+        <li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a></li>
+        <li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
+        <li class="menu-item menu-item-read"><a href="/read/" rel="section"><i class="fa fa-book fa-fw"></i>read</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+
+    
+    
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E8%A7%88"><span class="nav-number">1.</span> <span class="nav-text">总览</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%AD%E5%BF%83%E5%8C%96-vs-%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96"><span class="nav-number">1.1.</span> <span class="nav-text">中心化 vs 去中心化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E7%9A%84%E8%B5%B7%E6%BA%90-%E4%B8%AD%E5%BF%83%E5%8C%96"><span class="nav-number">1.1.1.</span> <span class="nav-text">问题的起源:中心化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96"><span class="nav-number">1.1.2.</span> <span class="nav-text">去中心化</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B1%E8%AF%86"><span class="nav-number">1.2.</span> <span class="nav-text">共识</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E4%B8%96%E7%95%8C"><span class="nav-number">2.</span> <span class="nav-text">区块链的世界</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8C%BA%E5%9D%97%EF%BC%8C%E6%B7%B7%E6%B2%8C%E4%B8%96%E7%95%8C%E7%9A%84%E8%B5%B7%E6%BA%90"><span class="nav-number">2.1.</span> <span class="nav-text">区块，混沌世界的起源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B5%B0%E8%BF%9B%E5%8C%BA%E5%9D%97%E5%86%85%EF%BC%8C%E6%8E%A2%E7%B4%A2%E6%B6%88%E6%81%AF%E7%9A%84%E6%9C%AC%E8%B4%A8"><span class="nav-number">2.2.</span> <span class="nav-text">走进区块内，探索消息的本质</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Bojie"
+      src="/images/ayst1.jpg">
+  <p class="site-author-name" itemprop="name">Bojie</p>
+  <div class="site-description" itemprop="description">做时间的朋友</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/BojieHuang1994" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;BojieHuang1994" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:h625892620@gmail.com" title="E-Mail → mailto:h625892620@gmail.com" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://https//www.instagram.com/h.b.j_jason" title="Instagram → https:&#x2F;&#x2F;https:&#x2F;&#x2F;www.instagram.com&#x2F;h.b.j_jason" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://bojiehuang1994.github.io/2021/05/05/%E5%8C%BA%E5%9D%97%E9%93%BE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/ayst1.jpg">
+      <meta itemprop="name" content="Bojie">
+      <meta itemprop="description" content="做时间的朋友">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="非得失">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          区块链技术（lockChain for Babies）
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-05-05 20:01:18" itemprop="dateCreated datePublished" datetime="2021-05-05T20:01:18+08:00">2021-05-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%92%A8%E8%AF%A2/" itemprop="url" rel="index"><span itemprop="name">咨询</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%92%A8%E8%AF%A2/%E5%8C%BA%E5%9D%97%E9%93%BE/" itemprop="url" rel="index"><span itemprop="name">区块链</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h2><p><strong>区块链：</strong>分布在全球各地、能够协同运转的数据库存储系统，区别于传统数据库运作——读写权限掌握在一个公司或者一个集权手上（中心化的特征）</p>
+<p>在比特币等语言体系之下，区块链本质上是一个去中心化的分布式账本数据库（感谢在与比特币相关的区块链应用中可使用这一术语，但区块链技术可能并不包含“账本”）。其本身是一串使用密码学相关联所产生的数据块，每一个数据块中包含了多次比特币网络交易有效确认的信息。</p>
+<h3 id="中心化-vs-去中心化"><a href="#中心化-vs-去中心化" class="headerlink" title="中心化 vs 去中心化"></a>中心化 vs 去中心化</h3><h4 id="问题的起源-中心化"><a href="#问题的起源-中心化" class="headerlink" title="问题的起源:中心化"></a>问题的起源:中心化</h4><p><strong>你要在某宝上买一部手机，交易流程如下：</strong><br>1.你将钱打给支付宝<br>2.支付宝收款后通知卖家发货<br>3.卖家发货<br>4.你确认收货<br>5.支付宝把钱打给卖家。</p>
+<p>虽然你是在跟卖家做交易，但是，所有的关键流程都是在跟<strong>支付宝</strong>打交道。支付宝就是这笔交易的<strong>中心</strong>。</p>
+<p><strong>这样的好处在于：万一哪个环节出问题，卖家和买家都可以通过支付宝寻求帮助，让支付宝做出仲裁。</strong></p>
+<p>这就是一个最简单的基于中心化思维构建的交易模型，它的价值显著，就是建立权威，通过权威背书来获得多方的信任，同时依赖权威方背后的资本和技术实力确保数据的可靠安全。</p>
+<p>你一定会摆出一个巨大的问号脸？？？？ 权威背后的资本or技术可靠吗, 权威可靠吗？</p>
+<p>假如说，支付宝程序发生重大BUG，导致一段时间内的转账记录全部丢失，或者更彻底一点，支付宝的服务器被ISIS恐怖组织的一个导弹全部炸毁了。而我刚刚转出去的100元找谁说理去，这个时候，你就成了刀殂上的鱼肉；</p>
+<p>支付宝若有良心，会勉为其难承认你刚刚转账的事实，但他不承认你也没辙，因为确实连他自己也不知道这笔转账是否真实存在。</p>
+<p>上述就是<strong>中心化最大的弊端——过分依赖中心和权威，也就意味着逐渐丧失自己的话语权。</strong></p>
+<h4 id="去中心化"><a href="#去中心化" class="headerlink" title="去中心化"></a>去中心化</h4><p><strong>买书极简版</strong><br>第一步，你下单并把钱打给卖家；<br>第二步，你将这条转账信息记录在自己账本上；<br>第三步，你将这条转账信息广播出去；<br>第四步，卖家和支付宝在收到你的转账信息之后，在他们自己的账本上分别记录；<br>第五步，卖家发货，同时将发货的事实记录在自己的账本上；<br>第六步，卖家把这条事实记录广播出去；<br>第七步，你和支付宝收到这条事实记录，在自己的账本上分别记录；<br>第八步，你收到书籍。至此，交易流程走完。</p>
+<p>如此一来，“人为刀俎我为鱼肉”的情况在这个体系下就比较难发生，因为所有人的账本上都有着完全一样的交易记录；<br>就算支付宝的账本服务器坏了，对不起卖家的账本还存在，我的账本还存在；这些都是这笔交易真实发生的铁证。</p>
+<p>在这套极简的交易系统中，你也许已经发现了诸多漏洞和不理解；<br>比如说三方当中有一个是坏人，他故意记录了对他更有利的转账信息怎么办？又比如说消息在传递过程中被黑客篡改了怎么办等等等等。<br>以下的区块链介绍能完美解释这些问题。</p>
+<p><strong>从极简交易系统中窥视更多区块链的一些影子：</strong></p>
+<ol>
+<li>分布式存储，通过多地备份，制造数据冗余</li>
+<li>让所有人都有能力都去维护共同一份数据库</li>
+<li>让所有人都有能力彼此监督维护数据库的行为</li>
+</ol>
+<p>在我看来，这些就是区块链技术最核心的东西，外人看起来高大上、深不可测，但探究其根本发现就是这么简单和淳朴。当然，这里面肯定会有很多很多很多细枝末节的技术需要重构。</p>
+<h3 id="共识"><a href="#共识" class="headerlink" title="共识"></a>共识</h3><p>分布式部署肯定是构建去中心化网络理所当然的解决方向——通过P2P协议将全世界所有节点计算机彼此相互连接，形成一张密密麻麻的网络；<br>以巧妙的机制，通过节点之间的交易数据同步来保证全球计算机节点的数据共享和一致。</p>
+<p>问题又来了，说的轻巧，“交易数据这么重要的东西，在一个完全不信任的P2P网络节点中以一种错综复杂的方式传递，数据的一致性和安全性谁来保证，如果说互相监督，他们到底怎么做到？”</p>
+<p>下面进入区块链的世界给你答案</p>
+<h2 id="区块链的世界"><a href="#区块链的世界" class="headerlink" title="区块链的世界"></a>区块链的世界</h2><p>文章的知识结构和设计思路也大抵上也会按照：</p>
+<ol>
+<li>首先，将区块作为最小单位体，讲述极简区块链系统是如何运转的；</li>
+<li>接着，进入到比区块更小单位体——交易记录，理解区块链是如何处理数据的；</li>
+<li>最后，将所有知识点柔和在一起，重回到区块和区块链，完整讲述整个工作流程。</li>
+</ol>
+<h3 id="区块，混沌世界的起源"><a href="#区块，混沌世界的起源" class="headerlink" title="区块，混沌世界的起源"></a>区块，混沌世界的起源</h3><p>我先粗暴的<strong>假设</strong>在这个极简的区块链系统里，**[1]每十分钟有且仅产生一笔交易。**</p>
+<p>在节点的视野里，大概每十分钟会凭空产生一个建立在自己平行宇宙世界的神奇区块<strong>（你可以将区块想象为一个盒子，这个盒子是用来打包信息的）</strong>；</p>
+<p>每一个节点都记录了这一笔交易在小纸条上；但不意味着每一个节点的小纸条都是有效的（因为时间差，多条记录的顺序各有不同）<br><strong>听谁的？最终的记录权是谁？谁挖到盒子听谁的</strong><br><strong>为什么挖？ 里面有数字货币</strong>（包括两部分的，1信息产生着给真正打包者的小费，2挖到盒子的奖励）</p>
+<p>区块挖到后，得到钱，里面放上自己的小纸条，<strong>小纸条上记录了这十分钟内产生的那唯一一笔交易信息，比如说——“小A转账给了小B100元”；当然，这段信息肯定是被</strong>加密处理<strong>过的，为的就是</strong>保证只有小A和小B（通过他们手上的钥匙）才有能力解读里面真正的内容。**</p>
+<p>这个神奇的盒子怎么去挖？<strong>找到一个有效的工作量证明，来获得盒子，</strong>(也就获得了信息的打包权）。</p>
+<p>显然，这是一件工作量巨大、成果随机的事件。但是呢，对于计算机节点来说，一旦从地底下挖出这个区块，他将获得<strong>区块内价值不菲的数字货币，以及“小A转账给了小B100元”过程中小A所支付的小费。</strong>同时，对于这个节点来说，也只有他才<strong>有权利真正记录（打包）小纸条里的内容</strong>，这是一份荣耀，而其他节点相当于只能使用它的复制品，一个已经没有数字货币加持的<strong>副本</strong>。</p>
+<p>为了更好的描述，我们将计算机节点从地底下挖出区块的过程叫做<strong>「挖矿」，</strong>刚才说了，这是一件工作量巨大、运气成分较多、但收益丰厚的事儿。</p>
+<p>过了一会儿，来自中国上海浦东新区张衡路上的一个节点突然跳出来很兴奋的说：“ 我挖到区块了！奖励归我！” 。</p>
+<p>虽然此刻张衡路节点已经拿到了数字货币，但对于其他计算机节点来说，因为这里面还涉及到其他一些利益瓜葛，他们不会选择默认相信张衡路节点所说的话；基于陌生节点彼此不信任的原则，他们拿过张衡路节点所谓挖到的区块（副本），开始<strong>校验区块</strong>内的小纸条信息是否真实有效等等。在区块链世界里，节点们正是通过校验小纸条信息的准确性，或<strong>间接或直接判断成功挖出区块的节点是否撒谎。</strong>（如何定义小纸条信息真实有效，后面会讲解，这里暂不做赘述）。</p>
+<p>在校验过程中，各个节点们会直接通过下面两个行为表达自己对张衡路节点的<strong>认同（准确无误）</strong>和态度：</p>
+<ul>
+<li>停止已经进行了一半甚至99.99%的挖矿进程；（只认定一个人的区块）</li>
+<li>将张衡路节点成功挖出的区块（副本）追加到自己区块链的末尾。（区块会按照时间顺序整齐的一字排列成为一个链状）</li>
+</ul>
+<h3 id="走进区块内，探索消息的本质"><a href="#走进区块内，探索消息的本质" class="headerlink" title="走进区块内，探索消息的本质"></a>走进区块内，探索消息的本质</h3><p>大概每十分钟会凭空产生一个神奇的区块，这个区块里放了一张小纸条，上面记录了这十分钟内产生的这唯一一笔交易信息。<br>显然，十分钟内产生的交易肯定远不止一条，可能是上万条;<br>这上万条数据在区块链世界是如何组织和处理的呢？<br>为什么在纸条上记录的只是某一次的交易信息，而不是某一个人的余额？余额好像更符合我们现实世界的理解才对。</p>
+<p>既然存在这样那样的疑问。现在我们就把视线暂时从“区块”、“区块链”这些看起来似乎较大实体的物质中移开，进入到<strong>区块内更微观的世界</strong>里一探究竟，看看小纸条到底是怎么一回事，它的产生以及它终其一生的使命：</p>
+<p>1.发起交易的时候，发起人会收到一张小纸条，他需要将交易记录比如说“盗盗转账给张三40元”写在纸上。说来也神奇，当写完的那一刹那，在小纸条的背面会自动将这段交易记录格式化成至少包含了<strong>“输入值”和“输出值”</strong>这两个重要字段；<br>“输入值”用于记录数字货币的有效来源，<br>“输出值”记录着数字货币发往的对象。</p>
+<p>2.刚刚创建的小纸条立马被标记成为“未确认”的小纸条。<br>从地下成功挖出区块并最终连接到区块链里的小纸条一开始会被标记为“有效”。若这条有效的小纸条作为其他交易的输入值被使用，那么，这个有效的小纸条很快会被标记为“无效”。因为各种原因，区块从链上断开、丢弃，曾经这个区块内被标记为“有效”的小纸条会被重新标记为“未确认”。</p>
+<p>3.<strong>区块链里面没有账户余额的概念，你真正拥有的数字资产实际上是一段交易信息；</strong>通过简单的加减法运算获知你数字钱包里的余额。</p>
+<p>上面的1、2、3仅仅作为结论一开始强行灌输给你的知识点，马上加亿点点细节</p>
+<p><img src="/images/v2-9b6d8ac951f48d7cd31b7d4f3e266c69_r.jpg"></p>
+<p>上图，是区块内，盗盗在一张小纸条上记录下的交易信息，后被格式化的呈现；<br>这是从无数打包进区块内的小纸条中，抽取出来的一张，以及它最终被格式化后的缩影。</p>
+<p>虽然看起来有多行，但实际上就是“盗盗转账给张三40个比特币”这一条交易数据另外的一种呈现形态。<br>因为区块链世界里面这么规定，<strong>每一条交易记录，必须有能力追溯到交易发起者 发起这笔交易、其中所涉及金额的上一笔全部交易信息；</strong>即这笔钱从何而来的问题。<br>这其实很容易理解，<strong>在去中心化的网络中，通过建立交易链、和通过交易链上的可溯源性间接保证数据安全和有效。</strong></p>
+<p>我们继续看，在区块链世界里，我们是如何仅通过“盗盗转账给张三40个比特币” 这条交易信息完成转账流程的。</p>
+<p><strong>第一步：判断是否有足够的余额完成交易</strong></p>
+<p>这里我们再一次重申，<strong>在比特币的区块链世界里是没有余额的概念</strong>（以太坊的底层区块链有余额概念），<strong>余额是通过简单数字的加减最终获得，你拥有所谓的数字货币实际上是因为你拥一条交易记录，</strong>即 “盗盗转账给张三40个比特币”！这里，我们还是拿这条记录说事：</p>
+<p>追溯“输出值”是“盗盗”相关的全部有效交易记录作为，对有效交易中的数字进行简单求和，判断是否大于等于40，如果确实大于等于，则将这些有效的交易记录合并形成一条新的交易记录（如下图）。如果小于40，其实可以不需要再继续往下探讨。</p>
+<p><img src="/images/v2-90202117662d6ffef784185525b7573e_r.jpg"></p>
+<p>就上图的例子，我们追溯到曾经转账给盗盗的有效交易记录有“小A转账给盗盗10 btc”、“小B转账给盗盗20 btc”、“小C转账给盗盗 25 btc”，我们需要将这三条交易记录合并成一条更复杂描述的交易记录，即 “( 小A转账给盗盗10 btc + 小B转账给盗盗20 btc + 小C转账给盗盗 25 btc ) 转账给张三40 btc ”</p>
+<p><strong>第二步：判断是否需要找零</strong></p>
+<p>对追溯到的有效交易数字求和，如果发现大于需要支付的金额，需要将多出的数字重新支付给自己，相当于找零。对应生成了一条全新的交易记录（如下图）。<br><img src="/images/v2-7b564661d4e1d6693ed89b71e0c68192_r.jpg"></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%92%A8%E8%AF%A2/" rel="tag"># 咨询</a>
+              <a href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/" rel="tag"># 区块链</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/05/04/%E4%BE%9B%E5%BA%94%E9%93%BE%E7%9A%84%E6%95%85%E4%BA%8B/" rel="prev" title="供应链--Baltam(知乎)">
+                  <i class="fa fa-chevron-left"></i> 供应链--Baltam(知乎)
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Bojie</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener external nofollow noreferrer" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+  
+
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":true},"rect":"opacity:0.7","log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
