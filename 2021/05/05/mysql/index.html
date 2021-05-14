@@ -25,13 +25,13 @@
   </script>
 <meta name="description" content="mysql command line client语法启动与退出1.cmd，键入命令：mysql -u root -p ; root的密码，然后就可以进入mysql了。 2.进入MySQL：启动MySQL Command Line Client（MySQL的DOS界面），直接输入安装时的密码即可。此时的提示符是：mysql&gt; 3.退出MySQL：quit或exit">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mysql">
+<meta property="og:title" content="Mysql-">
 <meta property="og:url" content="https://bojiehuang1994.github.io/2021/05/05/mysql/index.html">
 <meta property="og:site_name" content="非得失">
 <meta property="og:description" content="mysql command line client语法启动与退出1.cmd，键入命令：mysql -u root -p ; root的密码，然后就可以进入mysql了。 2.进入MySQL：启动MySQL Command Line Client（MySQL的DOS界面），直接输入安装时的密码即可。此时的提示符是：mysql&gt; 3.退出MySQL：quit或exit">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-05-05T14:41:57.800Z">
-<meta property="article:modified_time" content="2021-05-05T16:14:32.516Z">
+<meta property="article:modified_time" content="2021-05-08T14:13:38.560Z">
 <meta property="article:author" content="Bojie">
 <meta property="article:tag" content="数据分析">
 <meta property="article:tag" content="mysql">
@@ -51,7 +51,7 @@
     lang   : 'zh-CN'
   };
 </script>
-<title>Mysql | 非得失</title>
+<title>Mysql- | 非得失</title>
   
 
 
@@ -132,9 +132,9 @@
   <ul class="main-menu menu">
         <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
         <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
-        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">17</span></a></li>
-        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">13</span></a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">9</span></a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">19</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">14</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">11</span></a></li>
         <li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a></li>
         <li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
         <li class="menu-item menu-item-read"><a href="/read/" rel="section"><i class="fa fa-book fa-fw"></i>read</a></li>
@@ -197,7 +197,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#mysql-command-line-client%E8%AF%AD%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">mysql command line client语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8%E4%B8%8E%E9%80%80%E5%87%BA"><span class="nav-number">1.1.</span> <span class="nav-text">启动与退出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BA%93%E6%93%8D%E4%BD%9C"><span class="nav-number">1.2.</span> <span class="nav-text">库操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E8%A1%A8%E6%93%8D%E4%BD%9C%EF%BC%8C%E6%93%8D%E4%BD%9C%E4%B9%8B%E5%89%8D%E5%BA%94%E8%BF%9E%E6%8E%A5%E6%9F%90%E4%B8%AA%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">1.3.</span> <span class="nav-text">三、表操作，操作之前应连接某个数据库</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#mysql-command-line-client%E8%AF%AD%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">mysql command line client语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8%E4%B8%8E%E9%80%80%E5%87%BA"><span class="nav-number">1.1.</span> <span class="nav-text">启动与退出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BA%93%E6%93%8D%E4%BD%9C"><span class="nav-number">1.2.</span> <span class="nav-text">库操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E8%A1%A8%E6%93%8D%E4%BD%9C%EF%BC%8C%E6%93%8D%E4%BD%9C%E4%B9%8B%E5%89%8D%E5%BA%94%E8%BF%9E%E6%8E%A5%E6%9F%90%E4%B8%AA%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">1.3.</span> <span class="nav-text">三、表操作，操作之前应连接某个数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1%E3%80%81%E5%BB%BA%E8%A1%A8"><span class="nav-number">1.3.1.</span> <span class="nav-text">1、建表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2%E3%80%81%E8%8E%B7%E5%8F%96%E8%A1%A8%E7%BB%93%E6%9E%84"><span class="nav-number">1.3.2.</span> <span class="nav-text">2、获取表结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3%E3%80%81%E5%88%A0%E9%99%A4%E8%A1%A8"><span class="nav-number">1.3.3.</span> <span class="nav-text">3、删除表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4%E3%80%81%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE"><span class="nav-number">1.3.4.</span> <span class="nav-text">4、插入数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5%E3%80%81%E6%9F%A5%E8%AF%A2%E8%A1%A8%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE"><span class="nav-number">1.3.5.</span> <span class="nav-text">5、查询表中的数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6%E3%80%81%E5%88%A0%E9%99%A4%E8%A1%A8%E4%B8%AD%E6%95%B0%E6%8D%AE"><span class="nav-number">1.3.6.</span> <span class="nav-text">6、删除表中数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7%E3%80%81%E4%BF%AE%E6%94%B9%E8%A1%A8%E4%B8%AD%E6%95%B0%E6%8D%AE"><span class="nav-number">1.3.7.</span> <span class="nav-text">7、修改表中数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8%E3%80%81%E5%9C%A8%E8%A1%A8%E4%B8%AD%E5%A2%9E%E5%8A%A0%E5%AD%97%E6%AE%B5-%E5%8A%A0%E4%B8%80%E5%88%97-%EF%BC%9A"><span class="nav-number">1.3.8.</span> <span class="nav-text">8、在表中增加字段(加一列)：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9%E3%80%81%E6%9B%B4%E6%94%B9%E8%A1%A8%E5%90%8D%EF%BC%9A"><span class="nav-number">1.3.9.</span> <span class="nav-text">9、更改表名：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10%E3%80%81%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2%EF%BC%9ALike"><span class="nav-number">1.3.10.</span> <span class="nav-text">10、模糊查询：Like</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#11%E3%80%81union"><span class="nav-number">1.3.11.</span> <span class="nav-text">11、union</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12%E3%80%81%E6%8E%92%E5%BA%8F"><span class="nav-number">1.3.12.</span> <span class="nav-text">12、排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13%E3%80%81%E5%88%86%E7%BB%84-group-by"><span class="nav-number">1.3.13.</span> <span class="nav-text">13、分组 group by</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13%E3%80%81%E8%BF%9E%E6%8E%A5%E7%9A%84%E4%BD%BF%E7%94%A8JOIN"><span class="nav-number">1.3.14.</span> <span class="nav-text">13、连接的使用JOIN</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null%E5%80%BC%E5%A4%84%E7%90%86"><span class="nav-number">2.</span> <span class="nav-text">null值处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E5%80%BC%E7%B1%BB%E5%9E%8B"><span class="nav-number">3.</span> <span class="nav-text">数值类型</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -213,20 +213,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-count">19</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -289,7 +289,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Mysql
+          Mysql-
         </h1>
 
         <div class="post-meta-container">
@@ -307,7 +307,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-05-06 00:14:32" itemprop="dateModified" datetime="2021-05-06T00:14:32+08:00">2021-05-06</time>
+        <time title="修改时间：2021-05-08 22:13:38" itemprop="dateModified" datetime="2021-05-08T22:13:38+08:00">2021-05-08</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -344,22 +344,45 @@
 <p>4、连接数据库<br>命令： use 数据库名<br>例如：如果hbj数据库存在，尝试存取它：<br>mysql&gt; use hbj;<br>屏幕提示：Database changed</p>
 <p>5、查看当前使用的数据库<br>mysql&gt; select database();</p>
 <p>6、当前数据库包含的表信息：<br>mysql&gt; show tables; （注意：最后有个s）</p>
-<h3 id="三、表操作，操作之前应连接某个数据库"><a href="#三、表操作，操作之前应连接某个数据库" class="headerlink" title="三、表操作，操作之前应连接某个数据库"></a>三、表操作，操作之前应连接某个数据库</h3><p>1、建表<br>命令：create table &lt;表名&gt; ( &lt;字段名1&gt; &lt;类型1&gt; [,..&lt;字段名n&gt; &lt;类型n&gt;]);<br>mysql&gt; create table MyClass(</p>
+<h3 id="三、表操作，操作之前应连接某个数据库"><a href="#三、表操作，操作之前应连接某个数据库" class="headerlink" title="三、表操作，操作之前应连接某个数据库"></a>三、表操作，操作之前应连接某个数据库</h3><h4 id="1、建表"><a href="#1、建表" class="headerlink" title="1、建表"></a>1、建表</h4><p>命令：create table &lt;表名&gt; ( &lt;字段名1&gt; &lt;类型1&gt; [,..&lt;字段名n&gt; &lt;类型n&gt;]);<br>mysql&gt; create table MyClass(</p>
 <blockquote>
 <p>id int(4) not null primary key auto_increment,<br>name char(20) not null,<br>sex int(4) not null default ‘0’,<br>degree double(16,2));<br>解释：<br>char(20),是长度为20字符的字符串<br>int(4)：int表示占用4个字节32位的空间，（4）表示在有0填充情况下显示的宽度：0001<br>double(16,2):double是比float精度更高的方式，（16,2）表示16位长度，显示小数后两位</p>
 </blockquote>
-<p>2、获取表结构<br>命令： desc 表名，或者show columns from 表名<br>mysql&gt;DESCRIBE MyClass<br>mysql&gt; desc MyClass;<br>mysql&gt; show columns from MyClass;</p>
-<p>3、删除表<br>命令：drop table &lt;表名&gt;<br>例如：删除表名为 MyClass 的表<br>mysql&gt; drop table MyClass;</p>
-<p>4、插入数据<br>命令：insert into &lt;表名&gt; [( &lt;字段名1&gt;[,..&lt;字段名n &gt; ])] values ( 值1 )[, ( 值n )]<br>例如，往表 MyClass中插入二条记录, 这二条记录表示：<br>编号为1的名为Tom的成绩为96.45, 编号为2 的名为Joan 的成绩为82.99，编号为3 的名为Wang 的成绩为96.5.<br><del>mysql&gt; insert into MyClass values(‘Tom’,1,96.45),(‘Joan’,2,82.99), (‘Wang’,2, 96.59);</del><br><strong>注意：</strong><br>这里会报错！ERROR 1136 (21S01): Column count doesn’t match value count at row 1<br>说我数据与列不匹配，明明第一列是自增长为何会有错<br>原因<br>mysql和sqlsever 在这个语句上有差别<br>mysql只能指定列来插入<br>insert into MyClass(name,sex,degree)values(‘Tom’,1,96.45),(‘Joan’,2,82.99), (‘Wang’,2, 96.59);</p>
-<p>5、查询表中的数据<br>1)、查询所有行<br>命令： select &lt;字段1，字段2，…&gt; from &lt; 表名 &gt; where &lt; 表达式 &gt;<br>例如：查看表 MyClass 中所有数据<br>mysql&gt; select * from MyClass;</p>
+<h4 id="2、获取表结构"><a href="#2、获取表结构" class="headerlink" title="2、获取表结构"></a>2、获取表结构</h4><p>命令： desc 表名，或者show columns from 表名<br>mysql&gt;DESCRIBE MyClass<br>mysql&gt; desc MyClass;<br>mysql&gt; show columns from MyClass;</p>
+<h4 id="3、删除表"><a href="#3、删除表" class="headerlink" title="3、删除表"></a>3、删除表</h4><p>命令：drop table &lt;表名&gt;<br>例如：删除表名为 MyClass 的表<br>mysql&gt; drop table MyClass;</p>
+<h4 id="4、插入数据"><a href="#4、插入数据" class="headerlink" title="4、插入数据"></a>4、插入数据</h4><p>命令：<strong>insert into &lt;表名&gt; [( &lt;字段名1&gt;[,..&lt;字段名n &gt; ])] values ( 值1 )[, ( 值n )]</strong><br>例如，往表 MyClass中插入二条记录, 这二条记录表示：<br>编号为1的名为Tom的成绩为96.45, 编号为2 的名为Joan 的成绩为82.99，编号为3 的名为Wang 的成绩为96.5.<br><del>mysql&gt; insert into MyClass values(‘Tom’,1,96.45),(‘Joan’,2,82.99), (‘Wang’,2, 96.59);</del><br><strong>注意：</strong><br>这里会报错！ERROR 1136 (21S01): Column count doesn’t match value count at row 1<br>说我数据与列不匹配，明明第一列是自增长为何会有错<br>原因<br>mysql和sqlsever 在这个语句上有差别<br>mysql只能指定列来插入<br>insert into MyClass(name,sex,degree)values(‘Tom’,1,96.45),(‘Joan’,2,82.99), (‘Wang’,2, 96.59);</p>
+<h4 id="5、查询表中的数据"><a href="#5、查询表中的数据" class="headerlink" title="5、查询表中的数据"></a>5、查询表中的数据</h4><p>1)、查询所有行<br>命令： <strong>select &lt;字段1，字段2，…&gt; from &lt; 表名 &gt; where &lt; 表达式 &gt;</strong><br>例如：查看表 MyClass 中所有数据<br>mysql&gt; select * from MyClass;</p>
 <p>2）、查询前几行数据<br>例如：查看表 MyClass 中前2行数据<br>mysql&gt; select * from MyClass order by id limit 0,2; （从第0位开始，数两位）<br>或者：<br>mysql&gt; select * from MyClass limit 0,2;</p>
 <p>3)、查看特定数据<br>例如：查看id&lt;2的行<br>mysql&gt; select * from MyClass where id&lt;2;</p>
-<p>6、删除表中数据<br>命令：delete from 表名 where 表达式<br>例如：删除表 MyClass中编号为1 的记录<br>mysql&gt; delete from MyClass where id=1;</p>
-<p>7、修改表中数据：update 表名 set 字段=新值,… where 条件<br>mysql&gt; update MyClass set name=’Mary’ where id=1;</p>
-<p>8、在表中增加字段(加一列)：<br>命令：alter table 表名 add字段 类型 其他;<br>例如：在表MyClass中添加了一个字段passtest，类型为int(4)，默认值为0<br>mysql&gt; alter table MyClass add passtest int(4) default ‘0’</p>
-<p>9、更改表名：<br>命令：rename table 原表名 to 新表名;<br>例如：在表MyClass名字更改为YouClass<br>mysql&gt; rename table MyClass to YouClass;</p>
-<p>更新字段内容<br>update 表名 set 字段名 = 新内容<br>update 表名 set 字段名 = replace(字段名,’旧内容’,’新内容’);</p>
-<p>文章前面加入4个空格<br>update article set content=concat(‘　　‘,content);</p>
+<h4 id="6、删除表中数据"><a href="#6、删除表中数据" class="headerlink" title="6、删除表中数据"></a>6、删除表中数据</h4><p>命令：<strong>delete from 表名 where 表达式</strong><br>例如：删除表 MyClass中编号为1 的记录<br>mysql&gt; delete from MyClass where id=1;</p>
+<h4 id="7、修改表中数据"><a href="#7、修改表中数据" class="headerlink" title="7、修改表中数据"></a>7、修改表中数据</h4><p>命令<strong>update 表名 set 字段=新值,… where 条件</strong><br>mysql&gt; update MyClass set name=’Mary’ where id=1;</p>
+<h4 id="8、在表中增加字段-加一列-："><a href="#8、在表中增加字段-加一列-：" class="headerlink" title="8、在表中增加字段(加一列)："></a>8、在表中增加字段(加一列)：</h4><p>命令：<strong>alter table 表名 add字段 类型 其他;</strong><br>例如：在表MyClass中添加了一个字段passtest，类型为int(4)，默认值为0<br>mysql&gt; alter table MyClass add passtest int(4) default ‘0’</p>
+<h4 id="9、更改表名："><a href="#9、更改表名：" class="headerlink" title="9、更改表名："></a>9、更改表名：</h4><p>命令：<strong>rename table 原表名 to 新表名;</strong><br>例如：在表MyClass名字更改为YouClass<br>mysql&gt; rename table MyClass to YouClass;</p>
+<h4 id="10、模糊查询：Like"><a href="#10、模糊查询：Like" class="headerlink" title="10、模糊查询：Like"></a>10、模糊查询：<strong>Like</strong></h4><p>命令：<br>SELECT field1, field2,…fieldN<br>FROM table_name<br>WHERE field1 LIKE condition1 [AND [OR]] filed2 = ‘somevalue’<br>例如：mysql&gt; SELECT * from myclass WHERE name LIKE ‘%s’;<br>搜索myclass表中name列里带有s的整行信息</p>
+<h4 id="11、union"><a href="#11、union" class="headerlink" title="11、union"></a>11、<strong>union</strong></h4><p>接两个以上的 SELECT 语句的结果组合到一个结果集合中。多个 SELECT 语句会删除重复的数据<br>命令：<br>SELECT 列1, 列2,…列n<br>FROM tables1<br>[WHERE conditions]<br>UNION [ALL | DISTINCT]<br>SELECT 1, 列2,…列n<br>FROM tables2<br>[WHERE conditions];<br>解释：<br>DISTINCT: 可选，删除结果集中重复的数据。<strong>默认情况下 UNION 操作符已经删除了重复数据，所以 DISTINCT 修饰符对结果没啥影响。</strong><br>ALL: 可选，返回所有结果集，包含重复数据。</p>
+<p>例1：<br>SELECT country FROM Websites<br><strong>UNION</strong><br>SELECT country FROM apps<br>ORDER BY country;<br>注释：UNION 不能用于列出两个表中所有的country。如果一些网站和APP来自同一个国家，每个国家只会列出一次。UNION 只会选取不同的值。请使用 UNION ALL 来选取重复的值！</p>
+<p>例2：<br>SELECT country FROM Websites<br><strong>UNION ALL</strong><br>SELECT country FROM apps<br>ORDER BY country;</p>
+<p>例3：where的使用<br>使用 UNION ALL 从 “Websites” 和 “apps” 表中选取所有的中国(CN)的数据（也有重复的值）：<br>SELECT country, name FROM Websites<br>WHERE country=’CN’<br>UNION ALL<br>SELECT country, app_name FROM apps<br>WHERE country=’CN’<br>ORDER BY country;</p>
+<h4 id="12、排序"><a href="#12、排序" class="headerlink" title="12、排序"></a>12、排序</h4><p>使用 MySQL 的 <strong>ORDER BY</strong> 子句来设定你想按哪个字段哪种方式来进行排序<br>命令：<br>SELECT field1, field2,…fieldN FROM table_name1, table_name2…<br>ORDER BY field1 [ASC [DESC][默认 ASC]], [field2…] [ASC [DESC][默认 ASC]]</p>
+<p>mysql&gt; SELECT * from runoob_tbl ORDER BY submission_date ASC;（默认是这样）<br>mysql&gt; SELECT * from runoob_tbl ORDER BY submission_date DESC;</p>
+<h4 id="13、分组-group-by"><a href="#13、分组-group-by" class="headerlink" title="13、分组 group by"></a>13、分组 <strong>group by</strong></h4><p>GROUP BY 语句根据一个或多个列对结果集进行分组。<br>在分组的列上可以使用 COUNT, SUM, AVG,等函数。<br>命令：<br>SELECT column_name, function(column_name)<br>FROM table_name<br>WHERE column_name operator value<br>GROUP BY column_name;</p>
+<p>mysql&gt; SELECT * FROM employee_tbl;<br>+—-+——–+———————+——–+<br>| id | name   | date                | singin |<br>+—-+——–+———————+——–+<br>|  1 | 小明 | 2016-04-22 15:25:33 |      1 |<br>|  2 | 小王 | 2016-04-20 15:25:47 |      3 |<br>|  3 | 小丽 | 2016-04-19 15:26:02 |      2 |<br>|  4 | 小王 | 2016-04-07 15:26:14 |      4 |<br>|  5 | 小明 | 2016-04-11 15:26:40 |      4 |<br>|  6 | 小明 | 2016-04-04 15:26:54 |      2 |<br>+—-+——–+———————+——–+<br>6 rows in set (0.00 sec)</p>
+<p>例1：使用 GROUP BY 语句 将数据表按名字进行分组，并统计每个人有多少条记录<br>SELECT name, COUNT(*) FROM  myclass GROUP BY name<br>+——–+———-+<br>| name   | COUNT(*) |<br>+——–+———-+<br>| 小丽 |        1 |<br>| 小明 |        3 |<br>| 小王 |        2 |<br>+——–+———-+<br>3 rows in set (0.01 sec)</p>
+<p>例2:<strong>WITH ROLLUP</strong> 可以实现在分组统计数据基础上再进行相同的统计（SUM,AVG,COUNT…）。<br>例如我们将以上的数据表按名字进行分组，再统计每个人登录的次数<br>mysql&gt; SELECT name, SUM(singin) as singin_count FROM  employee_tbl GROUP BY name WITH ROLLUP;<br>+——–+————–+<br>| name   | singin_count |<br>+——–+————–+<br>| 小丽 |            2 |<br>| 小明 |            7 |<br>| 小王 |            7 |<br>| NULL   |           16 |<br>+——–+————–+<br>4 rows in set (0.00 sec)<br>其中记录 NULL 表示所有人的登录次数。</p>
+<p>我们可以使用 coalesce 来设置一个可以取代 NUll 的名称，coalesce 语法：<br>select coalesce(a,b,c);<br>参数说明：如果a==null,则选择b；如果b==null,则选择c；如果a!=null,则选择a；如果a b c 都为null ，则返回为null（没意义）。<br>以下实例中如果名字为空我们使用总数代替：</p>
+<p>mysql&gt; SELECT coalesce(name, ‘总数’), SUM(singin) as singin_count FROM  employee_tbl GROUP BY name WITH ROLLUP;<br>+————————–+————–+<br>| coalesce(name, ‘总数’) | singin_count |<br>+————————–+————–+<br>| 小丽                   |            2 |<br>| 小明                   |            7 |<br>| 小王                   |            7 |<br>| 总数                   |           16 |<br>+————————–+————–+<br>4 rows in set (0.01 sec)</p>
+<h4 id="13、连接的使用JOIN"><a href="#13、连接的使用JOIN" class="headerlink" title="13、连接的使用JOIN"></a>13、连接的使用JOIN</h4><ul>
+<li>INNER JOIN（内连接,或等值连接）：获取两个表中字段匹配关系的记录。</li>
+<li>LEFT JOIN（左连接）：获取左表所有记录，即使右表没有对应匹配的记录。</li>
+<li>RIGHT JOIN（右连接）： 与 LEFT JOIN 相反，用于获取右表所有记录，即使左表没有对应匹配的记录</li>
+</ul>
+<p>实例<br>在RUNOOB数据库中有两张表 tcount_tbl 和 runoob_tbl。两张数据表数据如下：<br>mysql&gt; use RUNOOB;<br>Database changed<br>mysql&gt; SELECT * FROM tcount_tbl;<br>+—————+————–+<br>| runoob_author | runoob_count |<br>+—————+————–+<br>| 菜鸟教程  | 10           |<br>| RUNOOB.COM    | 20           |<br>| Google        | 22           |<br>+—————+————–+<br>3 rows in set (0.01 sec)</p>
+<p>mysql&gt; SELECT * from runoob_tbl;<br>+———–+—————+—————+—————–+<br>| runoob_id | runoob_title  | runoob_author | submission_date |<br>+———–+—————+—————+—————–+<br>| 1         | 学习 PHP    | 菜鸟教程  | 2017-04-12      |<br>| 2         | 学习 MySQL  | 菜鸟教程  | 2017-04-12      |<br>| 3         | 学习 Java   | RUNOOB.COM    | 2015-05-01      |<br>| 4         | 学习 Python | RUNOOB.COM    | 2016-03-06      |<br>| 5         | 学习 C      | FK            | 2017-04-05      |<br>+———–+—————+—————+—————–+<br>5 rows in set (0.01 sec)</p>
+<p><strong>1.INNER JOIN</strong>(也可以省略 INNER 使用 JOIN，效果一样)<br>连接以上两张表来读取runoob_tbl表中所有runoob_author字段在tcount_tbl表对应的runoob_count字段值：<br>mysql&gt; SELECT a.runoob_id, a.runoob_author, b.runoob_count<br>FROM runoob_tbl a INNER JOIN tcount_tbl b<br>ON a.runoob_author = b.runoob_author;<br>+————-+—————–+—————-+<br>| a.runoob_id | a.runoob_author | b.runoob_count |<br>+————-+—————–+—————-+<br>| 1           | 菜鸟教程    | 10             |<br>| 2           | 菜鸟教程    | 10             |<br>| 3           | RUNOOB.COM      | 20             |<br>| 4           | RUNOOB.COM      | 20             |<br>+————-+—————–+—————-+<br>4 rows in set (0.00 sec)</p>
+<p>以上语句还可以写为where 代替 on<br>mysql&gt; SELECT a.runoob_id, a.runoob_author, b.runoob_count<br>FROM runoob_tbl a, tcount_tbl b<br>WHERE a.runoob_author = b.runoob_author;<br>+————-+—————–+—————-+<br>| a.runoob_id | a.runoob_author | b.runoob_count |<br>+————-+—————–+—————-+<br>| 1           | 菜鸟教程    | 10             |<br>| 2           | 菜鸟教程    | 10             |<br>| 3           | RUNOOB.COM      | 20             |<br>| 4           | RUNOOB.COM      | 20             |<br>+————-+—————–+—————-+<br>4 rows in set (0.01 sec)</p>
+<p><strong>2.LEFT JOIN</strong><br>MySQL LEFT JOIN 会读取左边数据表的全部数据，即便右边表无对应数据。<br>例子：<br>以 runoob_tbl 为左表，tcount_tbl 为右表：<br>mysql&gt; SELECT a.runoob_id, a.runoob_author, b.runoob_count<br>FROM runoob_tbl a LEFT JOIN tcount_tbl b<br>ON a.runoob_author = b.runoob_author;<br>+————-+—————–+—————-+<br>| a.runoob_id | a.runoob_author | b.runoob_count |<br>+————-+—————–+—————-+<br>| 1           | 菜鸟教程    | 10             |<br>| 2           | 菜鸟教程    | 10             |<br>| 3           | RUNOOB.COM      | 20             |<br>| 4           | RUNOOB.COM      | 20             |<br>| 5           | FK              | NULL           |<br>+————-+—————–+—————-+<br>5 rows in set (0.01 sec)</p>
+<p><strong>3.RIGHT JOIN</strong><br>MySQL RIGHT JOIN 会读取右边数据表的全部数据，即便左边边表无对应数据。<br>例子：<br>以 runoob_tbl 为左表，tcount_tbl 为右表，理解MySQL RIGHT JOIN的应用：<br>RIGHT JOIN<br>mysql&gt; SELECT a.runoob_id, a.runoob_author, b.runoob_count<br>FROM runoob_tbl a RIGHT JOIN tcount_tbl b<br>ON a.runoob_author = b.runoob_author;<br>+————-+—————–+—————-+<br>| a.runoob_id | a.runoob_author | b.runoob_count |<br>+————-+—————–+—————-+<br>| 1           | 菜鸟教程    | 10             |<br>| 2           | 菜鸟教程    | 10             |<br>| 3           | RUNOOB.COM      | 20             |<br>| 4           | RUNOOB.COM      | 20             |<br>| NULL        | NULL            | 22             |<br>+————-+—————–+—————-+<br>5 rows in set (0.01 sec)<br>以上实例中使用了 RIGHT JOIN，该语句会读取右边的数据表 tcount_tbl 的所有选取的字段数据，即便在左侧表 runoob_tbl 中没有对应的runoob_author 字段值。</p>
+<h2 id="null值处理"><a href="#null值处理" class="headerlink" title="null值处理"></a>null值处理</h2><h2 id="数值类型"><a href="#数值类型" class="headerlink" title="数值类型"></a>数值类型</h2><p>1．INT[(M)] 型： 正常大小整数类型<br>2．DOUBLE[(M,D)] 型： 正常大小(双精密)浮点数字类型<br>3．DATE 日期类型：支持的范围是1000-01-01到9999-12-31。MySQL以YYYY-MM-DD格式来显示DATE值，但是允许你使用字符串或数字把值赋给DATE列<br>4．CHAR(M) 型：定长字符串类型，当存储时，总是是用空格填满右边到指定的长度<br>5．BLOB TEXT类型，最大长度为65535(2^16-1)个字符。<br>6．VARCHAR型：变长字符串类型</p>
 
     </div>
 
@@ -383,6 +406,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2021/05/14/%E8%A1%8C%E4%B8%9A%E7%A0%94%E7%A9%B6%E6%A1%86%E6%9E%B6/" rel="next" title="行研报告-咨询公司">
+                  行研报告-咨询公司 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
