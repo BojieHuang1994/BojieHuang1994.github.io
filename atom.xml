@@ -6,7 +6,7 @@
   <link href="https://bojiehuang1994.github.io/atom.xml" rel="self"/>
   
   <link href="https://bojiehuang1994.github.io/"/>
-  <updated>2021-05-14T15:52:59.530Z</updated>
+  <updated>2021-07-22T06:09:28.039Z</updated>
   <id>https://bojiehuang1994.github.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>飞机制造那些事</title>
+    <link href="https://bojiehuang1994.github.io/2021/07/22/%E9%A3%9E%E6%9C%BA%E5%88%B6%E9%80%A0%E9%82%A3%E4%BA%9B%E4%BA%8B/"/>
+    <id>https://bojiehuang1994.github.io/2021/07/22/%E9%A3%9E%E6%9C%BA%E5%88%B6%E9%80%A0%E9%82%A3%E4%BA%9B%E4%BA%8B/</id>
+    <published>2021-07-22T06:09:21.055Z</published>
+    <updated>2021-07-22T06:09:28.039Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="制造" scheme="https://bojiehuang1994.github.io/categories/%E5%88%B6%E9%80%A0/"/>
+    
+    <category term="飞机制造" scheme="https://bojiehuang1994.github.io/categories/%E5%88%B6%E9%80%A0/%E9%A3%9E%E6%9C%BA%E5%88%B6%E9%80%A0/"/>
+    
+    
+    <category term="工业" scheme="https://bojiehuang1994.github.io/tags/%E5%B7%A5%E4%B8%9A/"/>
+    
+    <category term="行业" scheme="https://bojiehuang1994.github.io/tags/%E8%A1%8C%E4%B8%9A/"/>
+    
+  </entry>
+  
+  <entry>
     <title>估值方法</title>
     <link href="https://bojiehuang1994.github.io/2021/05/14/%E4%BC%B0%E5%80%BC/"/>
     <id>https://bojiehuang1994.github.io/2021/05/14/%E4%BC%B0%E5%80%BC/</id>
     <published>2021-05-14T15:16:57.891Z</published>
-    <updated>2021-05-14T15:52:59.530Z</updated>
+    <updated>2021-05-15T03:06:23.948Z</updated>
     
     
     <summary type="html">&lt;p&gt;估值方法有很多种，市盈率法、市净率法、市销率法、PEG法、DCF法等等&lt;/p&gt;
